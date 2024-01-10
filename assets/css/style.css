@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
 /*--------------------------------------------Colors*/
 
 .bg-color-name-title {
@@ -62,8 +63,8 @@
 
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
     background-color: #525252;
     color: #555555;
 }
@@ -83,7 +84,7 @@ h4 {
 }
 
 .general-sub {
-    font-family: "Exo", sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     color: #fafafa;
 }
@@ -99,7 +100,7 @@ h4 {
 
 .history-heading,
 .section-heading {
-    font-family: "Exo", sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
@@ -108,27 +109,9 @@ h4 {
 
 /*--------------------------------------------Heading*/
 
-header {
-    margin: 0;
-}
-
-.heading {
-    margin-left: 50px;
-}
-
-.logo {
-    background: url("https://images.unsplash.com/photo-1440778303588-435521a205bc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
 
 .name {
-    font-family: "Exo", sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
@@ -136,7 +119,7 @@ header {
 }
 
 .title {
-    font-family: "Roboto", sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
@@ -151,7 +134,10 @@ header {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
-
+/*---------------------------------------------Main*/
+.map-search{
+    display:flex;
+}
 
 /*--------------------------------------------Footer*/
 
@@ -205,132 +191,188 @@ footer .cv-pdf i:hover {
     margin: 20px;
 }
 
+/*--------------------------------------------Three Reasons*/
 
-/*-----------------------------------------Search Bar*/
-.search{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 70px;
-    background-color: #fff;
-    border-radius: 40px;
-    padding: 10px;
-    }
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
 
-    .search_input{
-    color: rgb(19, 17, 17);
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    margin-top:5px;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
 
-    .search .search_input{
-    padding: 0 10px;
-    width: 550px;
-    caret-color:red;
-    transition: width 0.4s linear;
-    }
-    
-    .search:hover > .search_icon{
-    background: red;
-    color: #fff;
-    }
 
-    .search_icon{
-    height: 50px;
-    width: 50px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:white;
-    background-color:black;
-    }
-    
-a:link{
-    text-decoration:none;
-}    
-/*----------------------Card*/
-@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
-.pricing4 {
-    font-family: "Montserrat", sans-serif;
-    color: #8d97ad;
+/*--------------------------------------------Contact*/
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
     font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
+}
+
+
+
+/*--------------------------------------------Media Queries*/
+
+@media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ .map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+ div#map {
+    min-height: 360px;
+    margin-bottom: 40px;
+}
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  
+  
+  
+  table {
+    font-size: 12px;
   }
   
-  .pricing4 h1,
-  .pricing4 h2,
-  .pricing4 h3,
-  .pricing4 h4,
-  .pricing4 h5,
-  .pricing4 h6 {
-    color: #3e4555;
+  .hotel-search {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 0;
+    position: static;
+    top: 0;
+    width: 440px;
+    z-index: 1;
   }
   
-  .pricing4 .font-weight-medium {
-    font-weight: 500;
+  #map {
+    margin-top: 40px;
+    width: 540px;
   }
   
-  .pricing4 .bg-light {
-    background-color: #f4f8fa !important;
+  #listing {
+    position: absolute;
+    width: 200px;
+    height: 470px;
+    overflow: auto;
+    left: 442px;
+    top: 0px;
+    cursor: pointer;
+    overflow-x: hidden;
   }
   
-  .pricing4 .subtitle {
-    color: #8d97ad;
-    line-height: 24px;
-  }
-  
-  .pricing4 .font-14 {
+  #findhotels {
     font-size: 14px;
   }
   
-  .pricing4 .font-13 {
+  #locationField {
+    -webkit-box-flex: 1 1 190px;
+    -ms-flex: 1 1 190px;
+    flex: 1 1 190px;
+    margin: 0 8px;
+  }
+  
+  #controls {
+    -webkit-box-flex: 1 1 140px;
+    -ms-flex: 1 1 140px;
+    flex: 1 1 140px;
+  }
+  
+  #autocomplete {
+    width: 100%;
+  }
+  
+  #country {
+    width: 100%;
+  }
+  
+  .placeIcon {
+    width: 20px;
+    height: 34px;
+    margin: 4px;
+  }
+  
+  .hotelIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  #resultsTable {
+    border-collapse: collapse;
+    width: 240px;
+  }
+  
+  #rating {
     font-size: 13px;
+    font-family: Arial Unicode MS;
   }
   
-  .pricing4 .card.card-shadow {
-    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  .iw_table_row {
+    height: 18px;
   }
   
-  .pricing4 .text-success {
-    color: #2cdd9b !important;
+  .iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
   }
   
-  .pricing4 .price small {
-    color: #8d97ad;
-    font-size: 16px;
-  }
-  
-  .pricing4 h5 {
-      line-height: 22px;
-      font-size: 18px;
-  }
-  
-  .pricing4 .btn-danger-gradiant {
-    background: #ff4d7e;
-    background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
-    background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-    background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-    background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
-  }
-  
-   .pricing4 .btn-danger-gradiant:hover {
-    background: #ff6a5b;
-    background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
-    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-    background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-    background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
-  }
-  
-  .pricing4 .btn-md {
-      padding: 10px 25px;
-      font-size: 16px;
+  .iw_table_icon {
+    text-align: right;
   }
