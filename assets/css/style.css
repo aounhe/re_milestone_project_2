@@ -3,6 +3,10 @@
 .bg-color-three-reasons {
     background-color: #ffffff;
 }
+.bg-color-contact {
+    background-color: #ffffff;
+}
+
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
@@ -123,7 +127,7 @@ footer .cv-pdf i:hover {
 /*--------------------------------------------Contact*/
 
 .contact-heading {
-    font-family: "Exo", sans-serif;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -143,6 +147,15 @@ button[type="submit"] {
     color: #fafafa;
 }
 
+.heroimage {
+  height: 366px;
+  background: url('https://images.unsplash.com/photo-1682687219640-b3f11f4b7234?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat;
+  text-align: left;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+}
 
 
 /*--------------------------------------------Media Queries*/
@@ -203,11 +216,11 @@ button[type="submit"] {
   
   #listing {
     position: absolute;
-    width: 200px;
+    width: 250px;
     height: 470px;
     overflow: auto;
-    left: 442px;
-    top: 0px;
+    left: 842px;
+    top: 150px;
     cursor: pointer;
     overflow-x: hidden;
   }
@@ -270,3 +283,5 @@ button[type="submit"] {
   .iw_table_icon {
     text-align: right;
   }
+
+  
