@@ -1,3 +1,14 @@
+// function to make the map responsive
+function initialize() {
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  // Resize stuff...
+  google.maps.event.addDomListener(window, "resize", function() {
+    var center = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(center);
+  });
+}
+
 // This example uses the autocomplete feature of the Google Places API.
 // It allows the user to find all hotels in a given place, within a given
 // country. It then displays markers for all the hotels returned,
