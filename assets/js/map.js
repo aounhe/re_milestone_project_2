@@ -304,3 +304,7 @@ function buildIWContent(place) {
 }
 
 window.initMap = initMap;
+// email.js
+
+emailjs.init('CEUO-Y_c4SLIZWDlf');
+emailjs.send("service_rjmiffd","template_imqmklp");
