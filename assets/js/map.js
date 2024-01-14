@@ -1,5 +1,5 @@
 // function to make the map responsive
-function initialize() {
+function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
   // Resize stuff...
   google.maps.event.addDomListener(window, "resize", function() {
