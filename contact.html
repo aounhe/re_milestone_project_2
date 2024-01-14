@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css">
-        <script src="assets/js/map.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("SIhUtAlUL1nBAmEf5");
+        })();
+    </script>>
     <title>Contact Us</title>
 </head>
 <body>
@@ -27,7 +31,6 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">Bookings</a>
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </div>
             </div>
@@ -42,15 +45,11 @@
                 <h5 class="uppercase text-center">We want to help!</h5>
 
                 <div class="center-form">
-                    <form>
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Tell us what went wrong" required></textarea>
-                        <div class="form-row text-center">
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary">Send</button>
-                            </div>
-                        </div>
+                    <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                        <textarea rows="5" name="summary" class="form-control" id="summary" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn-secondary center-block">Send Your Message</button>
                     </form>
                 </div>
 
@@ -121,6 +120,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
