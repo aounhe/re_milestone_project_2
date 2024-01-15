@@ -1,6 +1,6 @@
 <h1 style="text-align: center">Holiday Market</h1>
 
-![hero image screenshot](assets/images/)
+![hero image screenshot](assets/images/responsive-ms2.png)
 
 This is my submission for Milestone project 2. The Holiday Market site got a map with a search box that finds all of the hotels in a specified place within a given country. The map then displays markers for all of the hotels returned, with on-click details for each hotel.
 
@@ -23,7 +23,7 @@ Responsive layout on mobile and tablet. Interactive Maps, email.
 ### Technologies: ###
 
 - GitHub: [https://github.com/](https://github.com/)
-  - GitHub was used to host the application&#39;s repositories.
+  - GitHub was used to host the applications repositories.
 - GitPod: [https://www.gitpod.io/](https://www.gitpod.io/)
   - GitPod served as the integrated development environment used to code the site.
 - HTML: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -33,14 +33,11 @@ Responsive layout on mobile and tablet. Interactive Maps, email.
 - Bootstrap 4: [https://getbootstrap.com/](https://getbootstrap.com/)
   - The website uses the Bootstrap 4 framework to simplify the integration and styling of responsive elements.
 - JavaScript: [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-  - The site uses JavaScript to enable interactive user events and to incorporate features from the following APIs: Google Maps JavaScript API, Google Maps Embed API, Formspark.
+  - The site uses JavaScript to enable interactive user events and to incorporate features from the following APIs: Google Maps JavaScript API, Google Maps Embed API.
 - Google Maps JavaScript API: [https://developers.google.com/maps/documentation/javascript/overview](https://developers.google.com/maps/documentation/javascript/overview)
-    - The route.html page uses the Google Maps JavaScript API to power a &#39;Geography Challenge&#39;, which allows users to place 
-    nodes on a map of the US in an attempt to correctly identify the locations in the novel.
-
+    - The index.html page uses the Google Maps JavaScript API to power a Geography Challenge.
 - Google Maps Embed API: [https://developers.google.com/maps/documentation/embed/get-started](https://developers.google.com/maps/documentation/embed/get-started)
-  - The places.html page uses the Google Maps JavaScript API to provide users with maps and further information on accommodation, eateries, and tourist sights in each 
-  of the towns on the *American Gods* road trip.
+  - The index.html page uses the Google Maps JavaScript API to provide users with information on accommodation.
 - EmailJS: [https://www.emailjs.com/](https://www.emailjs.com/)
   - EmailJS was use to link the contact form on contact.html to a functioning email account.
 - Google Fonts: [https://fonts.google.com/](https://fonts.google.com/)
