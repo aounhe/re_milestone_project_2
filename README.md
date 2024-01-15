@@ -41,7 +41,7 @@ Responsive layout on mobile and tablet. Interactive Maps, email.
 - EmailJS: [https://www.emailjs.com/](https://www.emailjs.com/)
   - EmailJS was use to link the contact form on contact.html to a functioning email account.
 - Google Fonts: [https://fonts.google.com/](https://fonts.google.com/)
-  - The site uses Google Fonts to integrate the Lato and Amatic SC fonts into the website.
+  - The site uses Google Fonts to integrate the Lato font into the website.
 - Fontawesome: [https://fontawesome.com/](https://fontawesome.com/)
   - The site uses Font Awesome to integrate social media icons into the footer.
 
@@ -58,6 +58,9 @@ No errors were returned from the CSS validator
 
 * [JSHint](https://jshint.com/)
 No errors or warnings shown
+
+* [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+![hero image screenshot](assets/images/light-house-60.png)
 
 <h2 style="text-align: center">Deployment</h2>
 
@@ -102,7 +105,8 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 #### Image credits ####
 
-* Unsplash.com
+* [Unsplash.com](https://unsplash.com/)
 
-### Acknowledgements ###
-Thanks to Aaron my mentor, for advice on my project and the Code Institute Slack community.
+#### API ####
+
+* [Google Map Platform](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
