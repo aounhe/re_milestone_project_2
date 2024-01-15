@@ -6,17 +6,18 @@ This is my submission for Milestone project 2. The Holiday Market site got a map
 
 ### User Experience (UX) ###
 
-* As a visitor, I want to see where the locations of all the hotels in the area that i'm intrest in.
+* As a user, i want to Learning about a hotel and the surrounding area through photos, user reviews, amenity details, and location info.
 
 * As a visitor, it's important to read the hotels reviews to decied wich one i will book.
 
-* As a visitor, I really need information on where to stay.
+* As a visitor, finding hotels that match my needs and preferences, such as price, location, user ratings, amenities, and brand will be wonderful and time saving.
+
 
 ### Design ###
 
 * WireFrames:
-Desktop and Mobile wireframes.
-
+Desktop wireframe.
+![Wireframe](assets/images/Website-wireframe.png)
 * Features:
 Responsive layout on mobile and tablet. Interactive Maps, email.
 
@@ -60,7 +61,29 @@ No errors were returned from the CSS validator
 No errors or warnings shown
 
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
-![hero image screenshot](assets/images/light-house-60.png)
+![lighthouse screenshot](assets/images/light-house-60.png)
+
+### General Testing
+- Each feature was developed and tested in its own branch before being merged with master. Branches were subsequently deleted.
+- Each time a feature was added, all the functions were tested to see if there was an impact.
+- The site was sent to friends for feedback and testing.
+- All forms have validation and will not submit without the proper information.
+- .gitignore file has been included to prevent system file commits.
+- The image loading blur has been thoroughly tested and gone through numerous iterations to optimise the smoothness of the transition on different devices and internet speeds.
+- Backup Map functions have been tested in a local deployment.
+- Email error functions have been tested offline as well.
+- External links open in a new tab.
+
+### Mobile Testing
+- I tested the site personally on my Android device, going through the entire process, checking buttons, functions, checking out, etc. I was personally unable to test on iOS.
+- The site was sent to friends and relatives for them to follow the same process. They have tested on their devices, including iOS.
+- Chrome was utilised to inspect the site in mobile format, going through the pages and functions.
+
+### Desktop Testing
+- The site was developed on a Chromebook and, as such, the majority of testing occurred on Chrome.
+- The site was tested by friends and relatives on numerous desktop devices.
+- The site was marginally tested on other browsers, such as Firefox and Edge.
+- Internet Explorer was not tested and the site was not developed with it in mind as support for the browser is gradually being dropped.
 
 <h2 style="text-align: center">Deployment</h2>
 
@@ -101,12 +124,14 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 <h2 style="text-align: center">Credits</h2>
 
-
-
-#### Image credits ####
+#### Credits ####
 
 * [Unsplash.com](https://unsplash.com/)
 
 #### API ####
 
 * [Google Map Platform](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch)
+
+#### Wireframe ####
+
+* [Lucid](https://www.lucidchart.com/pages/)
